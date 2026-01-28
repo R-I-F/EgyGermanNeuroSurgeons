@@ -1,0 +1,10 @@
+Place the following image files in this folder (public/):
+
+1. logo.png          - Clinic Logo
+2. henry-profile.jpg - Dr. Henry profile
+3. ihab-conf.jpg     - Dr. Ihab sitting in conference
+4. surgery-1.jpg     - Both doctors in OR
+5. surgery-2.jpg     - Both doctors in OR
+6. surgery-3.jpg     - Both doctors in OR
+
+The app references them as /logo.png, /henry-profile.jpg, etc.
