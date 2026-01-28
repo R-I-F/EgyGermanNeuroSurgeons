@@ -39,7 +39,7 @@ export function Gallery() {
           viewport={{ once: true, margin: '-40px' }}
           className="grid gap-4 md:grid-cols-3"
         >
-          {images.map((img, i) => (
+          {images.map((img) => (
             <motion.div
               key={img.src}
               variants={item}

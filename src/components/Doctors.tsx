@@ -44,14 +44,12 @@ function DoctorCard({
   name,
   role,
   highlights,
-  index,
 }: {
   id: string
   image: string
   name: string
   role: string
   highlights: string[]
-  index: number
 }) {
   return (
     <motion.article
@@ -105,8 +103,8 @@ export function Doctors() {
           viewport={{ once: true, margin: '-50px' }}
           className="grid gap-8 md:grid-cols-2"
         >
-          <DoctorCard {...expert} index={0} />
-          <DoctorCard {...host} index={1} />
+          <DoctorCard {...expert} />
+          <DoctorCard {...host} />
         </motion.div>
       </div>
     </section>
