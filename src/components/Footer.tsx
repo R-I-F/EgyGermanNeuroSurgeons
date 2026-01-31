@@ -3,7 +3,7 @@ import { Phone, MapPin, Facebook } from 'lucide-react'
 
 const PHONE = '01015558155'
 const FACEBOOK_URL = 'https://www.facebook.com/p/Egyptian-German-Neurosurgeons-100067418503870/'
-const ADDRESS = '٣٠ شارع الدقي، الدقي، الجيزة، مصر'
+const GOOGLE_MAPS_URL = 'https://www.google.com/maps?q=30.006704,30.963318'
 
 export function Footer() {
   return (
@@ -28,12 +28,16 @@ export function Footer() {
             {PHONE}
           </a>
 
-          <div className="mt-8 flex flex-col items-center gap-2 text-medical-light/80">
-            <div className="flex items-center justify-center gap-2">
-              <MapPin className="h-5 w-5 flex-shrink-0" aria-hidden />
-              <span>العنوان: {ADDRESS}</span>
-            </div>
-          </div>
+          <a
+            href={GOOGLE_MAPS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex items-center gap-2 rounded-lg bg-white/10 px-5 py-3 font-semibold text-white transition hover:bg-white/20"
+          >
+            <MapPin className="h-5 w-5 flex-shrink-0" aria-hidden />
+            <span>اضغط هنا لفتح الموقع على خرائط جوجل</span>
+          </a>
+          <p className="mt-2 text-medical-light/80">عيادات ويست بارك - العيادة رقم ٤٦</p>
 
           <a
             href={FACEBOOK_URL}
